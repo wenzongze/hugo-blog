@@ -1,1 +1,3 @@
-curl -sL https://github.com/gohugoio/hugo/releases/download/v0.123.7/hugo_extended_0.123.7_linux-amd64.tar.gz | tar -xz hugo && mkdir -p themes && curl -sL https://github.com/CaiJimmy/hugo-theme-stack/archive/refs/heads/master.tar.gz | tar -xz -C themes/ && mv themes/hugo-theme-stack-master themes/hugo-theme-stack && ./hugo --gc --minify
+mkdir -p themes
+curl -sL https://github.com/CaiJimmy/hugo-theme-stack/archive/master.tar.gz | tar xz -C themes/
+mv themes/hugo-theme-stack-master themes/hugo-theme-stack
